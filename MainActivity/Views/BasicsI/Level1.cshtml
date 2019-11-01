@@ -1,0 +1,53 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model MainActivity.ViewModels.Lvl1_ViewModel
+<html>
+<head>
+    <meta name="keywords" content="HTML,CSS,SCSS,Javascript">
+    <meta name="description" content="?">
+    <meta name="author" content="Denis J Finkel">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/BasicsI/Level1/css/style.css">
+    <script src="~/BasicsI/Level1/js/index.js"></script>
+    <title>Basics Level 1 </title>
+</head>
+<body>
+    <!--Header-->
+    <header id="header-toolbar">
+        <div id="progressBar" style="width:0%">
+            <div>
+                <span id="progress-number">@ViewBag.Result</span>
+                <span id="icon-info">
+                    <button id="btn-icon-info" onclick="sendMessage('@ViewData["EnglishTranslation"]')">
+                        <img src="~/BasicsI/Level1/css/img/ic_info_100px.png" alt="close window" height="50" width="50" />
+                    </button>
+                </span>
+                <span id="icon-exit">
+                    <a asp-action="MainMenu" asp-controller="BasicsI">
+                        <img src="~/BasicsI/Level1/css/img/ic_close_window100px.png" alt="close window" height="50" width="50" />
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <main>
+        <form method="post" asp-action="Level1" asp-controller="BasicsI">
+            <div id="form-container">
+                <h2 id="Label-RussianQuestion">@ViewData["GenerateRandomWord"]</h2><br />
+                <div asp-validation-summary="None"></div>
+                <span id="text-input-container">
+                    <input id="text-box" asp-for="Input" placeholder="answer goes here..." />
+                </span>
+                <span asp-validation-for="Input"></span>
+
+            </div>
+            <!--Footer-->
+            <div id="btn-container">
+                <input type="submit" value="Confirm" name="Confirm" id="BtnConfirm" />
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+<!-- ()-->

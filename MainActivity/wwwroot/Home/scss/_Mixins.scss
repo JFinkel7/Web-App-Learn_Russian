@@ -1,0 +1,5 @@
+﻿// * Mixins For Home *
+// * Used To Text The View Borders *
+@mixin testBorder($color){
+    border: 2px solid $color;
+}

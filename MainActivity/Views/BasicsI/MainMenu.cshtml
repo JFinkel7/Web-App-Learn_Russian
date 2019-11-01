@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="HTML,CSS,SCSS,Javascript">
+    <meta name="description" content="?">
+    <meta name="author" content="Denis J Finkel">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/BasicsI/MainMenu/css/style.css">
+    <title>Main Menu BasicsI</title>
+</head>
+<body>
+    <header id="Header-BasicsI">
+        <h1 id="title_BasicsI">Basics(I)</h1>
+    </header>
+    <main>
+        <section id="BasicsI-GridContainer">
+            <!--Level(I) Activity-->
+            <div class="grid-item">
+                <form action="#" method="GET">
+                    <a href=@Url.Action("Level1", "BasicsI")>
+                        <input id="Btn_Level1" type="button" value="Level 1" name="btnLvl1" />
+                    </a>
+                </form>
+            </div>
+            <!--Home Activity-->
+            <div class="grid-item">
+                <form action="/Home" method="GET">
+                    <button id="basicsII_ImageButton">
+                        <img src="~/BasicsI/MainMenu/css/img/russian_coat_of_arms_real_bronze.png" alt="russian coat of arms" height="225" width="225" />
+                    </button>
+                </form>
+            </div>
+            <!--Level(II) Activity-->
+            <div class="grid-item">
+                <form action="#" method="GET">
+                    <a href=@Url.Action("Level2", "BasicsI")>
+                        <input id="Btn_Level2" type="button" value="Level 2" name="btnLvl2" />
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+<!-- ()-->

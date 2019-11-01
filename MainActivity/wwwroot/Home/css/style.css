@@ -1,0 +1,56 @@
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 900px;
+  min-height: 450px;
+  background: #0F1218;
+}
+
+#Header-LearnRussian {
+  background-color: #1F232F;
+  position: sticky;
+}
+#Header-LearnRussian #title_learnRussian {
+  color: #FFFDE7;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4em;
+  font-style: italic;
+  font-family: Gabriola;
+}
+
+#BasicsI #basicsI-title {
+  text-align: center;
+  color: #7FFFD4;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Times New Roman";
+}
+#BasicsI #basicsI_ImageButton {
+  position: relative;
+  left: 45%;
+  border: none;
+  background-color: transparent;
+}
+
+#BasicsII #basicsII-title {
+  text-align: left;
+  color: #7FFFD4;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Times New Roman";
+}
+#BasicsII #basicsII_ImageButton {
+  position: relative;
+  left: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

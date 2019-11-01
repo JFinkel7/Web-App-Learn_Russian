@@ -1,0 +1,116 @@
+﻿/* Level1 SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+
+body {
+    overflow: hidden;
+    background-color: $Azure;
+    margin: auto;
+    @include configBody_Weight_Height();
+}
+
+#header-toolbar {
+    padding: 25px;
+    background-color: $blue_Black;
+    border: $blue_Black 1px ridge;
+    border-radius: 2px;
+
+
+    #progressBar {
+        background-color: $blue_Black;
+        border-radius: 15px;
+        padding: 3px;
+
+        #progress-number {
+            position: absolute;
+            right: 50%;
+            font-size: 30px;
+            color: $Amber;
+            text-align: center;
+        }
+
+        #icon-exit {
+            background-color: transparent;
+            position: absolute;
+            right: 5px;
+        }
+
+        #icon-info {
+            background-color: transparent;
+            position: absolute;
+            right: 75px;
+
+            #btn-icon-info {
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+
+    #progressBar > div {
+        background-color: $blue_Electric1;
+        //width: 40%;
+        /* Adjust with JavaScript */
+        height: 30px;
+        border-radius: 10px;
+    }
+}
+
+// <MAIN>
+main {
+    //Form-Container
+    #form-container {
+        // <Label>
+        #Label-RussianQuestion {
+            padding: 5px;
+            color: $Black;
+            position: relative;
+            top: 100px;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        //<input/>
+        #text-input-container {
+            display: flex;
+            justify-content: center;
+
+            #text-box {
+                padding: 25px;
+                position: relative;
+                top: 185px;
+                height: 25px;
+                font-size: 20px;
+                width: 600px;
+                border: ridge 2.5px $Black;
+                border-radius: 10px;
+                text-align: left;
+            }
+        }
+    }
+}
+//<footer>
+#btn-container {
+    position: relative;
+    bottom: -560px;
+    width: inherit;
+
+    #BtnConfirm {
+        padding: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        background: $blue_Black;
+        color: forestgreen;
+        border: none;
+        width: 100%;
+        border: $blue_Black 1px ridge;
+    }
+}
+
+#results{
+    text-align:center;
+    position:relative;
+    top:250px;
+}

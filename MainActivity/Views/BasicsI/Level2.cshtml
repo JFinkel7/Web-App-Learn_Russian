@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="HTML,CSS,SCSS,Javascript">
+    <meta name="description" content="?">
+    <meta name="author" content="Denis J Finkel">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/BasicsI/Level2/css/style.css">
+    <title>Basics Level 2</title>
+</head>
+<body>
+    <header>
+        <h1>Level 2</h1>
+    </header>
+    <main>
+        <section>
+            <form asp-action="Level1" asp-controller="BasicsI">
+                <h2 id="Lbl-russianQuestion">@ViewData["GenerateRandomWord"]</h2><br />
+                <div asp-validation-summary="None"></div>
+                <input id="text-box" asp-for="Input" placeholder="answer goes here..." />
+                <span asp-validation-for="Input"></span>
+            </form>
+        </section>
+
+        <script src="~/BasicsI/Level1/js/index.js"></script>
+    </main>
+    <div id="results">
+        <p>@ViewBag.Result</p>
+    </div>
+    <!--Footer-->
+    <footer id="btn-container">
+        <form asp-action="Level1" asp-controller="BasicsI">
+            <input type="submit" value="Confirm" name="Confirm" id="BtnConfirm" />
+
+        </form>
+    </footer>
+
+
+</body>
+</html>
+<!-- ()-->

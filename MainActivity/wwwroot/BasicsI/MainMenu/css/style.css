@@ -1,0 +1,68 @@
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 900px;
+  min-height: 450px;
+  background-color: azure;
+}
+
+#Header-BasicsI {
+  background-color: #171B24;
+  border-radius: 5px;
+  position: sticky;
+}
+#Header-BasicsI #title_BasicsI {
+  color: #7FFFD4;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4em;
+  font-style: italic;
+  font-family: Gabriola;
+}
+
+#BasicsI-GridContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 250px 250px 250px;
+}
+#BasicsI-GridContainer .grid-item {
+  margin: 5px;
+}
+#BasicsI-GridContainer .grid-item #basicsII_ImageButton {
+  position: relative;
+  left: 40%;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+#BasicsI-GridContainer .grid-item #Btn_Level1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: italic;
+  width: 100%;
+  height: 237px;
+  background-color: #171B24;
+  border-radius: 2px;
+  color: #F0E68C;
+}
+#BasicsI-GridContainer .grid-item #Btn_Level2 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: italic;
+  width: 100%;
+  height: 237px;
+  background-color: #171B24;
+  border-radius: 2px;
+  color: #ffe29f;
+}
+
+/*# sourceMappingURL=style.css.map */

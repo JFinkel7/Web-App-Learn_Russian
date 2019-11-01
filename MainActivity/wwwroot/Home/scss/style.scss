@@ -1,0 +1,61 @@
+﻿// * SCSS Style For Home *
+@import '_Mixins.scss';
+@import '_Colors.scss';
+body {
+    margin: auto;
+    max-width: 1200px;
+    min-width: 600px;
+    max-height: 900px;
+    min-height: 450px;
+    background: $blue_PureBlack;
+}
+// <Header>
+#Header-LearnRussian {
+    //@include testBorder(red);
+    background-color: $blue_Blackish;
+    position: sticky;
+    //(Title)
+    #title_learnRussian {
+        color: $yellow_White2;
+        text-align: center;
+        font-weight: 900;
+        font-size: 4em;
+        font-style: italic;
+        font-family: Gabriola;
+    }
+}// END OF HEADER
+
+// <Section>
+#BasicsI {
+    #basicsI-title {
+        text-align: center;
+        color: $blue_Aquamarine;
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Times New Roman';
+    }
+
+    #basicsI_ImageButton {
+        position: relative;
+        left: 45%;
+        border: none;
+        background-color: transparent;
+    }
+}
+// <Section>
+#BasicsII {
+    #basicsII-title {
+        text-align: left;
+        color: $blue_Aquamarine;
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Times New Roman';
+    }
+
+    #basicsII_ImageButton {
+        position: relative;
+        left: 0;
+        border: none;
+        background-color: transparent;
+    }
+}

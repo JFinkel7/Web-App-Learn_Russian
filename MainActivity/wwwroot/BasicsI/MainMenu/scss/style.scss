@@ -1,0 +1,63 @@
+﻿@import '_Mixins.scss';
+@import '_Colors.scss';
+
+body {
+    margin: auto;
+    box-sizing: border-box;
+    @include configBody_Weight_Height();
+    background-color: azure;
+}
+// END OF BODY
+
+//<Header>
+#Header-BasicsI {
+    background-color: $blue_Black;
+    border-radius:5px;
+    position: sticky;
+
+    #title_BasicsI {
+        @include configHeader_Title($blue_Aquamarine);
+    }
+}
+//<Section>
+#BasicsI-GridContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px;
+
+    .grid-item {
+        margin: 5px;
+        //<Image Button>
+        #basicsII_ImageButton {
+            position: relative;
+            left: 40%;
+            border: none;
+            background-color: transparent;
+            margin: 5px;
+        }
+        //<Input Button Lvl 1>
+        #Btn_Level1 {
+            text-align: center;
+            font-family: Arial;
+            font-size: 40px;
+            font-style: italic;
+            width: 100%;
+            height: 237px;
+            background-color: $blue_Black;
+            border-radius: 2px;
+            color: $yellow_Khaki0;
+        }
+        //<Input Button Lvl 2>
+        #Btn_Level2 {
+            text-align: center;
+            font-family: Arial;
+            font-size: 40px;
+            font-style: italic;
+            width: 100%;
+            height: 237px;
+            background-color: $blue_Black;
+            border-radius: 2px;
+            color: $yellow_Beige;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+/* Level1 SCSS Styles */
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  overflow: hidden;
+  background-color: #f0ffff;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 900px;
+  min-height: 450px;
+}
+
+#header-toolbar {
+  padding: 25px;
+  background-color: #171B24;
+  border: #171B24 1px ridge;
+  border-radius: 2px;
+}
+#header-toolbar #progressBar {
+  background-color: #171B24;
+  border-radius: 15px;
+  padding: 3px;
+}
+#header-toolbar #progressBar #progress-number {
+  position: absolute;
+  right: 50%;
+  font-size: 30px;
+  color: #FFBF00;
+  text-align: center;
+}
+#header-toolbar #progressBar #icon-exit {
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+}
+#header-toolbar #progressBar #icon-info {
+  background-color: transparent;
+  position: absolute;
+  right: 75px;
+}
+#header-toolbar #progressBar #icon-info #btn-icon-info {
+  background-color: transparent;
+  border: none;
+}
+#header-toolbar #progressBar > div {
+  background-color: #7DF9FF;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 10px;
+}
+
+main #form-container #Label-RussianQuestion {
+  padding: 5px;
+  color: #000000;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+main #form-container #text-input-container {
+  display: flex;
+  justify-content: center;
+}
+main #form-container #text-input-container #text-box {
+  padding: 25px;
+  position: relative;
+  top: 185px;
+  height: 25px;
+  font-size: 20px;
+  width: 600px;
+  border: ridge 2.5px #000000;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#btn-container {
+  position: relative;
+  bottom: -560px;
+  width: inherit;
+}
+#btn-container #BtnConfirm {
+  padding: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  background: #171B24;
+  color: forestgreen;
+  border: none;
+  width: 100%;
+  border: #171B24 1px ridge;
+}
+
+#results {
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */
