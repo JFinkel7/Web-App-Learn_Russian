@@ -5,11 +5,14 @@ namespace Main_Activity.Controllers.BasicsIController {
     public class BasicsIController : Controller {
         //
         private const int WIN_POINTS = 100;
+        private bool IsCorrect = true;
+        private string userInput;
         //
         // * Main Menu *
         public IActionResult MainMenu() {
             return View();
         }
+        
 
         // * Level 1 *
         [HttpGet]
@@ -22,16 +25,18 @@ namespace Main_Activity.Controllers.BasicsIController {
         public IActionResult Level1(Lvl1_ViewModel ViewBag, Level1 Lvl1) {
             ShowEnglishTranslation(Lvl1);
             if (ModelState.IsValid) {
-                string userInput = ViewBag.Input.ToString();
+                userInput = ViewBag.Input.ToString();
                 if (!(string.IsNullOrEmpty(userInput))) {
                     if (Lvl1.QuestionIsCorrect(userInput)) {
+                        //base.ViewBag.Result = "Correct";
                         base.ViewBag.Result = "Correct";
 
                     } else {
+                        //base.ViewBag.Result = "Wrong";
                         base.ViewBag.Result = "Wrong";
                     }
-                }
-            }
+                } 
+            } else Redirect("Level1");
             return View();
         }
 

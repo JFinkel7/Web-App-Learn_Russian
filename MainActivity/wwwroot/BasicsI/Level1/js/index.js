@@ -1,39 +1,34 @@
 ﻿// NOTE: Current File is Not Being Used Until Updated!
 // DOCUMENT ID'S
+var soundFile; var audioPath = "C:\Users\User\Documents\7 Projects\Russian Projects\Website Learn Russian\1 - Learn Russian\Version 3.00\LearnRussian\com.jfinkelstudios.web.app.learnrussian\MainActivity\wwwroot\BasicsI\Level1\click_1.wav"
 var btnConfirm = document.getElementById("btn-icon-info");
 var txtQuestion = document.getElementById("Label-RussianQuestion");
 var progressBar = document.getElementById("progressBar");
 
-let RUSSIAN_WORD = [
-    "Это София",
-    "Я Брайан",
-    "Я Брайан, а Это София",
-    "мой учитель-Дима",
-    "Я русский студент",
-    "мой профессор преподает английский",
-    "Брайан-мой профессор",
-    "Это мой наставник"
-]
 
 
-function sendMessage(message) {
-    alert(message);
-}
-function setProgressBar(result) {
-    var startProgress = 0;
-    if (result === "Correct") {
-        progressBar.style.width = `${10}%`;
+function setProgressBar(isCorrect) {
+    if (isCorrect==="Correct") {
+        alert("true"); 
     } else {
-        progressBar.style.width = 0;
+        alert("false");
     }
 }
 
-function generateRandomQuestion() {
-    // Generates A Random Question On Load 
-    randomRussianQuestion = setRandomIndex(russianQuestion);
-    txtQuestion.textContent = randomRussianQuestion;
-
+function playClickEffect() {
+    soundFile = new Audio("Level1/Audio/click_1.wav"); // Buffers When Automatically When created
+    if (soundFile != null || soundFile != undefined) {
+        soundFile.play();
+        console.log("Sound Works");
+    }
 }
+function sendMessage(message) {
+    alert(message);
+    
+}
+
+
+
 
 
 
