@@ -3,11 +3,10 @@ using MainActivity.Words;
 using MainActivity.ViewModels;
 namespace Main_Activity.Controllers.BasicsIController {
     public class BasicsIController : Controller {
-        //
-        private const int WIN_POINTS = 100;
+        //****>
         private bool IsCorrect = true;
         private string userInput;
-        //
+        //****>
         // * Main Menu *
         public IActionResult MainMenu() {
             return View();
@@ -28,11 +27,9 @@ namespace Main_Activity.Controllers.BasicsIController {
                 userInput = ViewBag.Input.ToString();
                 if (!(string.IsNullOrEmpty(userInput))) {
                     if (Lvl1.QuestionIsCorrect(userInput)) {
-                        //base.ViewBag.Result = "Correct";
                         base.ViewBag.Result = "Correct";
 
                     } else {
-                        //base.ViewBag.Result = "Wrong";
                         base.ViewBag.Result = "Wrong";
                     }
                 } 
@@ -51,6 +48,7 @@ namespace Main_Activity.Controllers.BasicsIController {
         public IActionResult Level2() {
             return View();
         }
+        
     }//END OF CLASS
 }
 
